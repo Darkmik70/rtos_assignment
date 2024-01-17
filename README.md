@@ -21,7 +21,7 @@ Assgnment
 	(iii) close the special files
 	(iv) performs operations (i.e., wasting time)
 	(v) performs (i)(ii) and (iii) again to write to the driver its identifier, but with closed square brackets (i.e., 1], 2], 3] or 4]).
-(5) The write system call writes on the kernel log the string received from the thread. A typical output of the system, when reading the kernel log, can be the following [11][2[11]2][3[11]3][4]. This sequence clearly shows that some threads can be preempted by other threads (if this does not happen, try to increase the computational time of longer tasks).
+(5) The write system call writes on the kernel by other threads (if this does not happen, try to increase the computational time of longer tasks).
 (6) Finally, modify the code of all tasks to use semaphores. Every thread now protects all its operations (i) to (v) with a semaphore, which prevents other tasks from preempting. Specifically, use semaphores with a priority ceiling access protocol.  
 You do not know how to use the priority ceiling protocol with the Linux thread because we have not mentioned this possibility yet. Go to slides 76-81 in the Thread slides and search for additional information on the web! It should not be difficult.
 Good work!
